@@ -1999,5 +1999,33 @@
     "rank": "baseline",
     "tier": "baseline",
     "incomplete": false
+  },
+  {
+    "model": "tencent-hy3",
+    "cw_pct": "52.9",
+    "ots_pct": "51.1",
+    "ots_macro": "51.1",
+    "balanced_ots": "54.9",
+    "threat_capture": "94.5",
+    "critical_miss": "5.5",
+    "anomaly_capture": "62.0",
+    "anomaly_suppression": "51.5",
+    "false_review": "56.7",
+    "false_escalation": "3.1",
+    "ord_pct": "76.2",
+    "mae": "19.0",
+    "rmse": "24.3",
+    "exact": "105",
+    "minor": "78",
+    "hard": "6",
+    "hard_miss": "3",
+    "hard_over": "3",
+    "n_errors": "0",
+    "n": "189",
+    "avg_seconds_per_event": "166.8",
+    "total_tokens": "0",
+    "total_llm_errors": "0",
+    "tier": "closed_source",
+    "incomplete": false
   }
 ]
