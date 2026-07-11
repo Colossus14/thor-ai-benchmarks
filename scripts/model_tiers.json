@@ -75,7 +75,10 @@
         "owl-alpha",
         "laguna-m.1",
         "gpt-4o-mini",
-        "tencent-hy3"
+        "tencent-hy3",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
       ]
     },
     "open_source_pro": {
