@@ -1,6 +1,7 @@
 {
   "highlights": {
     "recent_additions": [
+      "deepseek-v4-flash-0731",
       "kimi-k3",
       "tencent-hy3",
       "glm-5.2",
@@ -80,7 +81,8 @@
         "gpt-5.6-luna",
         "gpt-5.6-sol",
         "gpt-5.6-terra",
-        "kimi-k3"
+        "kimi-k3",
+        "deepseek-v4-flash-0731"
       ]
     },
     "open_source_pro": {
