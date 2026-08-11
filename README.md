@@ -2,7 +2,7 @@
 
 This benchmark evaluates LLMs on THOR finding triage. It focuses on security event and forensic finding assessment, not generic reasoning, coding, or vulnerability research.
 
-The current public result set covers **72 complete models**, **10 THOR reports**, and **189 expert-classified findings**. Models are compared against human expert ground truth and are evaluated on both classification quality and operational usefulness.
+The current public result set covers **73 complete models**, **10 THOR reports**, and **189 expert-classified findings**. Models are compared against human expert ground truth and are evaluated on both classification quality and operational usefulness.
 
 Interactive companion: [THOR Finding Triage Benchmark](https://nextron-labs.github.io/thor-ai-benchmarks/) for hoverable scatter plots, tier filters, leader tables, and the chart gallery. Use it whenever the static charts below get too dense to read.
 
@@ -259,7 +259,7 @@ Naive baselines can appear strong on individual metrics, especially safety metri
 | 9 | `claude-opus-4.6` | 62.4% | 64.8% | 0.0% | 100.0% | 43.3% | 9.3% | $4.91 | 11.93s |
 | 10 | `claude-opus-4.8` | 62.6% | 64.7% | 0.0% | 100.0% | 33.0% | 4.1% | $6.97 | 9.10s |
 
-**Shown:** top 10 / 45 matched models. **Matched:** 45 / 72 complete models.
+**Shown:** top 10 / 46 matched models. **Matched:** 46 / 73 complete models.
 
 **Interpretation:** Under these constraints, `gemini-3.1-flash-lite` is the current profile leader. Values in this section are generated from `combined/operational-profile-high-safety.csv`.
 
@@ -284,7 +284,7 @@ Naive baselines can appear strong on individual metrics, especially safety metri
 | 9 | `claude-opus-4.6` | 62.4% | 64.8% | 0.0% | 100.0% | 43.3% | 9.3% | $4.91 | 11.93s |
 | 10 | `claude-opus-4.8` | 62.6% | 64.7% | 0.0% | 100.0% | 33.0% | 4.1% | $6.97 | 9.10s |
 
-**Shown:** top 10 / 63 matched models. **Matched:** 63 / 72 complete models.
+**Shown:** top 10 / 64 matched models. **Matched:** 64 / 73 complete models.
 
 **Interpretation:** Under these constraints, `gemini-3.1-flash-lite` is the current profile leader. Values in this section are generated from `combined/operational-profile-balanced-soc.csv`.
 
@@ -309,7 +309,7 @@ Naive baselines can appear strong on individual metrics, especially safety metri
 | 9 | `mimo-v2-pro` | 61.2% | 49.7% | 5.5% | 94.5% | 30.9% | 16.5% | $0.69 | 9.85s |
 | 10 | `qwen3.7-max` | 65.7% | 61.7% | 0.0% | 100.0% | 32.0% | 6.2% | — | 12.72s |
 
-**Shown:** top 10 / 54 matched models. **Matched:** 54 / 72 complete models.
+**Shown:** top 10 / 55 matched models. **Matched:** 55 / 73 complete models.
 
 **Interpretation:** Under these constraints, `qwen3.6-max` is the current profile leader. Values in this section are generated from `combined/operational-profile-noise-reduction.csv`.
 
