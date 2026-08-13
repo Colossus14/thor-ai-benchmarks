@@ -2,7 +2,7 @@
 
 This benchmark evaluates LLMs on THOR finding triage. It focuses on security event and forensic finding assessment, not generic reasoning, coding, or vulnerability research.
 
-The current public result set covers **74 complete models**, **10 THOR reports**, and **189 expert-classified findings**. Models are compared against human expert ground truth and are evaluated on both classification quality and operational usefulness.
+The current public result set covers **75 complete models**, **10 THOR reports**, and **189 expert-classified findings**. Models are compared against human expert ground truth and are evaluated on both classification quality and operational usefulness.
 
 Interactive companion: [THOR Finding Triage Benchmark](https://nextron-labs.github.io/thor-ai-benchmarks/) for hoverable scatter plots, tier filters, leader tables, and the chart gallery. Use it whenever the static charts below get too dense to read.
 
@@ -13,8 +13,8 @@ The first table ignores deployment tier and shows the current profile leaders ac
 
 | Use case | Suggested model | Why |
 |---|---|---|
-| High-safety triage | `gemini-3.1-flash-lite` | Profile leader under current constraints by Balanced OTS; 0.0% Critical Miss. |
-| Balanced SOC triage | `gemini-3.1-flash-lite` | Profile leader under current constraints by Balanced OTS; 0.0% Critical Miss. |
+| High-safety triage | `gemini-3.7-flash` | Profile leader under current constraints by Balanced OTS; 0.0% Critical Miss; low review load. |
+| Balanced SOC triage | `gemini-3.7-flash` | Profile leader under current constraints by Balanced OTS; 0.0% Critical Miss; low review load. |
 | Noise reduction / high-volume triage | `qwen3.6-max` | Lowest False Review Load overall among models that cleared the guardrails; low review load; slower than many candidates. |
 
 There is no single best model. The useful choice depends on whether the deployment optimizes for missed-incident avoidance, balanced SOC triage, review-load reduction, cost, latency, data-control boundaries, or hardware constraints. The global winner is not automatically the best option for local or open-source deployments.
@@ -27,8 +27,8 @@ Deployment constraints matter. A vendor API model may be easy to test, but some 
 
 | Use case | Suggested model | Why |
 |---|---|---|
-| High-safety triage | `gemini-3.1-flash-lite` | Profile leader under current constraints by Balanced OTS; 0.0% Critical Miss. |
-| Balanced SOC triage | `gemini-3.1-flash-lite` | Profile leader under current constraints by Balanced OTS; 0.0% Critical Miss. |
+| High-safety triage | `gemini-3.7-flash` | Profile leader under current constraints by Balanced OTS; 0.0% Critical Miss; low review load. |
+| Balanced SOC triage | `gemini-3.7-flash` | Profile leader under current constraints by Balanced OTS; 0.0% Critical Miss; low review load. |
 | Noise reduction / high-volume triage | `qwen3.6-max` | Lowest False Review Load in this tier among models that cleared the guardrails; low review load; slower than many candidates. |
 
 ### Open Source / Pro Hardware
@@ -82,7 +82,7 @@ The first charts are decision charts: they are meant to help pick a model for an
 <!-- BEGIN GENERATED:CHART_NARRATIVE -->
 This chart puts the three operational profile leaders next to the `always-inc` safety baseline. Each group shows Balanced OTS, Critical Miss Rate, and False Review Load with value labels, so the trade-off is visible without reading the full tables.
 
-`gemini-3.1-flash-lite` is now both the high-safety and balanced SOC profile leader under the current constraints.
+`gemini-3.7-flash` is now both the high-safety and balanced SOC profile leader under the current constraints.
 `qwen3.6-max` reduces review load the most under the noise-reduction profile, but has higher miss risk (12.7% Critical Miss) than the high-safety leader.
 `always-inc` is a safety reference, not a useful triage model.
 
@@ -248,20 +248,20 @@ Naive baselines can appear strong on individual metrics, especially safety metri
 
 | # | Model | CW% | BalOTS | CritMiss | ThreatCap | FalseRev | FalseEsc | Cost/Run | AvgTime |
 |---:|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | `gemini-3.1-flash-lite` | 67.8% | 70.8% | 0.0% | 100.0% | 33.0% | 3.1% | $0.24 | 2.07s |
-| 2 | `glm-5.1` | 65.3% | 69.6% | 0.0% | 100.0% | 39.2% | 10.3% | $0.84 | 36.35s |
-| 3 | `claude-opus-4.5` | 66.3% | 69.0% | 1.8% | 98.2% | 35.1% | 12.4% | $4.81 | 9.42s |
-| 4 | `gemini-3.5-flash` | 69.6% | 68.8% | 1.8% | 98.2% | 30.9% | 5.2% | $2.22 | 9.23s |
-| 5 | `gemma4-31b` | 65.7% | 68.5% | 0.0% | 100.0% | 39.2% | 5.2% | $0.09 | 22.45s |
-| 6 | `kimi-k2.7-code` | 64.0% | 67.7% | 1.8% | 98.2% | 36.1% | 7.2% | $1.05 | 26.45s |
-| 7 | `deepseek-v4-pro-0813` | 60.4% | 66.9% | 0.0% | 100.0% | 40.2% | 8.2% | — | 0.00s |
-| 8 | `gemini-3.1-pro` | 66.2% | 66.3% | 1.8% | 98.2% | 37.1% | 3.1% | $4.47 | 22.33s |
-| 9 | `glm-5` | 64.2% | 65.5% | 1.8% | 98.2% | 37.1% | 12.4% | $0.75 | 34.96s |
-| 10 | `claude-opus-4.6` | 62.4% | 64.8% | 0.0% | 100.0% | 43.3% | 9.3% | $4.91 | 11.93s |
+| 1 | `gemini-3.7-flash` | 72.5% | 72.5% | 0.0% | 100.0% | 28.9% | 3.1% | — | 0.00s |
+| 2 | `gemini-3.1-flash-lite` | 67.8% | 70.8% | 0.0% | 100.0% | 33.0% | 3.1% | $0.24 | 2.07s |
+| 3 | `glm-5.1` | 65.3% | 69.6% | 0.0% | 100.0% | 39.2% | 10.3% | $0.84 | 36.35s |
+| 4 | `claude-opus-4.5` | 66.3% | 69.0% | 1.8% | 98.2% | 35.1% | 12.4% | $4.81 | 9.42s |
+| 5 | `gemini-3.5-flash` | 69.6% | 68.8% | 1.8% | 98.2% | 30.9% | 5.2% | $2.22 | 9.23s |
+| 6 | `gemma4-31b` | 65.7% | 68.5% | 0.0% | 100.0% | 39.2% | 5.2% | $0.09 | 22.45s |
+| 7 | `kimi-k2.7-code` | 64.0% | 67.7% | 1.8% | 98.2% | 36.1% | 7.2% | $1.05 | 26.45s |
+| 8 | `deepseek-v4-pro-0813` | 60.4% | 66.9% | 0.0% | 100.0% | 40.2% | 8.2% | — | 0.00s |
+| 9 | `gemini-3.1-pro` | 66.2% | 66.3% | 1.8% | 98.2% | 37.1% | 3.1% | $4.47 | 22.33s |
+| 10 | `glm-5` | 64.2% | 65.5% | 1.8% | 98.2% | 37.1% | 12.4% | $0.75 | 34.96s |
 
-**Shown:** top 10 / 47 matched models. **Matched:** 47 / 74 complete models.
+**Shown:** top 10 / 48 matched models. **Matched:** 48 / 75 complete models.
 
-**Interpretation:** Under these constraints, `gemini-3.1-flash-lite` is the current profile leader. Values in this section are generated from `combined/operational-profile-high-safety.csv`.
+**Interpretation:** Under these constraints, `gemini-3.7-flash` is the current profile leader. Values in this section are generated from `combined/operational-profile-high-safety.csv`.
 
 ### Balanced SOC
 
@@ -273,20 +273,20 @@ Naive baselines can appear strong on individual metrics, especially safety metri
 
 | # | Model | CW% | BalOTS | CritMiss | ThreatCap | FalseRev | FalseEsc | Cost/Run | AvgTime |
 |---:|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | `gemini-3.1-flash-lite` | 67.8% | 70.8% | 0.0% | 100.0% | 33.0% | 3.1% | $0.24 | 2.07s |
-| 2 | `glm-5.1` | 65.3% | 69.6% | 0.0% | 100.0% | 39.2% | 10.3% | $0.84 | 36.35s |
-| 3 | `claude-opus-4.5` | 66.3% | 69.0% | 1.8% | 98.2% | 35.1% | 12.4% | $4.81 | 9.42s |
-| 4 | `gemini-3.5-flash` | 69.6% | 68.8% | 1.8% | 98.2% | 30.9% | 5.2% | $2.22 | 9.23s |
-| 5 | `gemma4-31b` | 65.7% | 68.5% | 0.0% | 100.0% | 39.2% | 5.2% | $0.09 | 22.45s |
-| 6 | `kimi-k2.7-code` | 64.0% | 67.7% | 1.8% | 98.2% | 36.1% | 7.2% | $1.05 | 26.45s |
-| 7 | `deepseek-v4-pro-0813` | 60.4% | 66.9% | 0.0% | 100.0% | 40.2% | 8.2% | — | 0.00s |
-| 8 | `gemini-3.1-pro` | 66.2% | 66.3% | 1.8% | 98.2% | 37.1% | 3.1% | $4.47 | 22.33s |
-| 9 | `glm-5` | 64.2% | 65.5% | 1.8% | 98.2% | 37.1% | 12.4% | $0.75 | 34.96s |
-| 10 | `claude-opus-4.6` | 62.4% | 64.8% | 0.0% | 100.0% | 43.3% | 9.3% | $4.91 | 11.93s |
+| 1 | `gemini-3.7-flash` | 72.5% | 72.5% | 0.0% | 100.0% | 28.9% | 3.1% | — | 0.00s |
+| 2 | `gemini-3.1-flash-lite` | 67.8% | 70.8% | 0.0% | 100.0% | 33.0% | 3.1% | $0.24 | 2.07s |
+| 3 | `glm-5.1` | 65.3% | 69.6% | 0.0% | 100.0% | 39.2% | 10.3% | $0.84 | 36.35s |
+| 4 | `claude-opus-4.5` | 66.3% | 69.0% | 1.8% | 98.2% | 35.1% | 12.4% | $4.81 | 9.42s |
+| 5 | `gemini-3.5-flash` | 69.6% | 68.8% | 1.8% | 98.2% | 30.9% | 5.2% | $2.22 | 9.23s |
+| 6 | `gemma4-31b` | 65.7% | 68.5% | 0.0% | 100.0% | 39.2% | 5.2% | $0.09 | 22.45s |
+| 7 | `kimi-k2.7-code` | 64.0% | 67.7% | 1.8% | 98.2% | 36.1% | 7.2% | $1.05 | 26.45s |
+| 8 | `deepseek-v4-pro-0813` | 60.4% | 66.9% | 0.0% | 100.0% | 40.2% | 8.2% | — | 0.00s |
+| 9 | `gemini-3.1-pro` | 66.2% | 66.3% | 1.8% | 98.2% | 37.1% | 3.1% | $4.47 | 22.33s |
+| 10 | `glm-5` | 64.2% | 65.5% | 1.8% | 98.2% | 37.1% | 12.4% | $0.75 | 34.96s |
 
-**Shown:** top 10 / 65 matched models. **Matched:** 65 / 74 complete models.
+**Shown:** top 10 / 66 matched models. **Matched:** 66 / 75 complete models.
 
-**Interpretation:** Under these constraints, `gemini-3.1-flash-lite` is the current profile leader. Values in this section are generated from `combined/operational-profile-balanced-soc.csv`.
+**Interpretation:** Under these constraints, `gemini-3.7-flash` is the current profile leader. Values in this section are generated from `combined/operational-profile-balanced-soc.csv`.
 
 ### Noise-Reduction / High-Volume Triage
 
@@ -302,14 +302,14 @@ Naive baselines can appear strong on individual metrics, especially safety metri
 | 2 | `qwen3.5-plus-20260420` | 63.7% | 52.8% | 7.3% | 92.7% | 23.7% | 7.2% | $0.50 | 45.82s |
 | 3 | `qwen3.6-27b` | 66.1% | 61.3% | 5.5% | 94.5% | 24.7% | 2.1% | — | 49.18s |
 | 4 | `qwen3.6-plus` | 60.3% | 47.5% | 9.1% | 90.9% | 26.8% | 3.1% | $1.67 | 41.64s |
-| 5 | `qwen3.7-plus` | 63.8% | 61.0% | 3.6% | 96.4% | 28.9% | 4.1% | $0.37 | 33.58s |
-| 6 | `qwen3.6-flash` | 55.2% | 37.7% | 18.2% | 81.8% | 29.9% | 3.1% | $0.30 | 17.61s |
-| 7 | `gemini-3.5-flash` | 69.6% | 68.8% | 1.8% | 98.2% | 30.9% | 5.2% | $2.22 | 9.23s |
-| 8 | `kimi-k2.6` | 63.6% | 61.2% | 3.6% | 96.4% | 30.9% | 4.1% | $1.21 | 72.45s |
-| 9 | `mimo-v2-pro` | 61.2% | 49.7% | 5.5% | 94.5% | 30.9% | 16.5% | $0.69 | 9.85s |
-| 10 | `qwen3.7-max` | 65.7% | 61.7% | 0.0% | 100.0% | 32.0% | 6.2% | — | 12.72s |
+| 5 | `gemini-3.7-flash` | 72.5% | 72.5% | 0.0% | 100.0% | 28.9% | 3.1% | — | 0.00s |
+| 6 | `qwen3.7-plus` | 63.8% | 61.0% | 3.6% | 96.4% | 28.9% | 4.1% | $0.37 | 33.58s |
+| 7 | `qwen3.6-flash` | 55.2% | 37.7% | 18.2% | 81.8% | 29.9% | 3.1% | $0.30 | 17.61s |
+| 8 | `gemini-3.5-flash` | 69.6% | 68.8% | 1.8% | 98.2% | 30.9% | 5.2% | $2.22 | 9.23s |
+| 9 | `kimi-k2.6` | 63.6% | 61.2% | 3.6% | 96.4% | 30.9% | 4.1% | $1.21 | 72.45s |
+| 10 | `mimo-v2-pro` | 61.2% | 49.7% | 5.5% | 94.5% | 30.9% | 16.5% | $0.69 | 9.85s |
 
-**Shown:** top 10 / 56 matched models. **Matched:** 56 / 74 complete models.
+**Shown:** top 10 / 57 matched models. **Matched:** 57 / 75 complete models.
 
 **Interpretation:** Under these constraints, `qwen3.6-max` is the current profile leader. Values in this section are generated from `combined/operational-profile-noise-reduction.csv`.
 
