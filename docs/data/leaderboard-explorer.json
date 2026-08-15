@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-14T07:03:39.031320+00:00",
+  "generated_at": "2026-08-15T19:59:49.331643+00:00",
   "source": {
     "leaderboard": "combined/leaderboard.json",
     "operational_summary_by_tier": "combined/operational-profile-summary-by-tier.csv"
   },
   "summary": {
-    "model_count": 81,
+    "model_count": 82,
     "baseline_count": 3,
-    "benchmarked_model_count": 78,
-    "complete_count": 81,
+    "benchmarked_model_count": 79,
+    "complete_count": 82,
     "incomplete_count": 0
   },
   "metrics": [
@@ -2425,6 +2425,44 @@
       "rank_label": "55",
       "rank_numeric": 55,
       "rank_sort": 55,
+      "model": "qwen3.8-27b",
+      "tier": "closed_source",
+      "cw_pct": 53.4,
+      "ots_pct": 54.9,
+      "ots_macro": 52.3,
+      "balanced_ots": 60.7,
+      "threat_capture": 100.0,
+      "critical_miss": 0.0,
+      "anomaly_capture": 91.9,
+      "anomaly_suppression": 8.1,
+      "false_review": 49.5,
+      "false_escalation": 4.1,
+      "ord_pct": 76.5,
+      "mae": 16.3,
+      "rmse": 20.6,
+      "avg_seconds_per_event": 0.0,
+      "total_tokens": 0,
+      "estimated_run_cost_cents": null,
+      "exact": 104,
+      "minor": 81,
+      "hard": 4,
+      "hard_miss": 0,
+      "hard_over": 0,
+      "n_errors": 0,
+      "n": 189,
+      "incomplete": false,
+      "is_baseline": false,
+      "exact_rate_all_findings": 55.03,
+      "minor_rate_all_findings": 42.86,
+      "hard_rate_all_findings": 2.12,
+      "hard_miss_share_all_findings": 0.0,
+      "hard_over_share_all_findings": 0.0,
+      "llm_error_rate_all_findings": 0.0
+    },
+    {
+      "rank_label": "56",
+      "rank_numeric": 56,
+      "rank_sort": 56,
       "model": "tencent-hy3",
       "tier": "closed_source",
       "cw_pct": 52.9,
@@ -2460,9 +2498,9 @@
       "llm_error_rate_all_findings": 0.0
     },
     {
-      "rank_label": "56",
-      "rank_numeric": 56,
-      "rank_sort": 56,
+      "rank_label": "57",
+      "rank_numeric": 57,
+      "rank_sort": 57,
       "model": "gemini-2.5-flash",
       "tier": "closed_source",
       "cw_pct": 52.3,
@@ -2498,9 +2536,9 @@
       "llm_error_rate_all_findings": 0.0
     },
     {
-      "rank_label": "57",
-      "rank_numeric": 57,
-      "rank_sort": 57,
+      "rank_label": "58",
+      "rank_numeric": 58,
+      "rank_sort": 58,
       "model": "gpt-5",
       "tier": "closed_source",
       "cw_pct": 51.9,
@@ -2536,9 +2574,9 @@
       "llm_error_rate_all_findings": 0.0
     },
     {
-      "rank_label": "58",
-      "rank_numeric": 58,
-      "rank_sort": 58,
+      "rank_label": "59",
+      "rank_numeric": 59,
+      "rank_sort": 59,
       "model": "laguna-m.1",
       "tier": "closed_source",
       "cw_pct": 51.3,
@@ -2574,9 +2612,9 @@
       "llm_error_rate_all_findings": 0.0
     },
     {
-      "rank_label": "59",
-      "rank_numeric": 59,
-      "rank_sort": 59,
+      "rank_label": "60",
+      "rank_numeric": 60,
+      "rank_sort": 60,
       "model": "nemotron-3-super-120b",
       "tier": "open_source_pro",
       "cw_pct": 51.0,
@@ -2612,9 +2650,9 @@
       "llm_error_rate_all_findings": 0.0
     },
     {
-      "rank_label": "60",
-      "rank_numeric": 60,
-      "rank_sort": 60,
+      "rank_label": "61",
+      "rank_numeric": 61,
+      "rank_sort": 61,
       "model": "gpt-5.4-mini",
       "tier": "closed_source",
       "cw_pct": 49.7,
@@ -2650,9 +2688,9 @@
       "llm_error_rate_all_findings": 0.0
     },
     {
-      "rank_label": "61",
-      "rank_numeric": 61,
-      "rank_sort": 61,
+      "rank_label": "62",
+      "rank_numeric": 62,
+      "rank_sort": 62,
       "model": "llama-3.1-70b",
       "tier": "open_source_consumer",
       "cw_pct": 49.7,
@@ -2688,9 +2726,9 @@
       "llm_error_rate_all_findings": 0.0
     },
     {
-      "rank_label": "62",
-      "rank_numeric": 62,
-      "rank_sort": 62,
+      "rank_label": "63",
+      "rank_numeric": 63,
+      "rank_sort": 63,
       "model": "gpt-5.6-sol",
       "tier": "closed_source",
       "cw_pct": 49.5,
@@ -2726,9 +2764,9 @@
       "llm_error_rate_all_findings": 0.0
     },
     {
-      "rank_label": "63",
-      "rank_numeric": 63,
-      "rank_sort": 63,
+      "rank_label": "64",
+      "rank_numeric": 64,
+      "rank_sort": 64,
       "model": "gpt-5.4",
       "tier": "closed_source",
       "cw_pct": 48.3,
@@ -2764,9 +2802,9 @@
       "llm_error_rate_all_findings": 0.0
     },
     {
-      "rank_label": "64",
-      "rank_numeric": 64,
-      "rank_sort": 64,
+      "rank_label": "65",
+      "rank_numeric": 65,
+      "rank_sort": 65,
       "model": "gpt-5-mini",
       "tier": "closed_source",
       "cw_pct": 47.6,
@@ -2802,9 +2840,9 @@
       "llm_error_rate_all_findings": 0.0
     },
     {
-      "rank_label": "65",
-      "rank_numeric": 65,
-      "rank_sort": 65,
+      "rank_label": "66",
+      "rank_numeric": 66,
+      "rank_sort": 66,
       "model": "gpt-5.6-terra",
       "tier": "closed_source",
       "cw_pct": 46.1,
@@ -2840,9 +2878,9 @@
       "llm_error_rate_all_findings": 0.0
     },
     {
-      "rank_label": "66",
-      "rank_numeric": 66,
-      "rank_sort": 66,
+      "rank_label": "67",
+      "rank_numeric": 67,
+      "rank_sort": 67,
       "model": "gemini-2.5-flash-lite",
       "tier": "closed_source",
       "cw_pct": 44.8,
@@ -2878,9 +2916,9 @@
       "llm_error_rate_all_findings": 0.0
     },
     {
-      "rank_label": "67",
-      "rank_numeric": 67,
-      "rank_sort": 67,
+      "rank_label": "68",
+      "rank_numeric": 68,
+      "rank_sort": 68,
       "model": "devstral-small",
       "tier": "open_source_consumer",
       "cw_pct": 44.1,
@@ -2916,9 +2954,9 @@
       "llm_error_rate_all_findings": 0.0
     },
     {
-      "rank_label": "68",
-      "rank_numeric": 68,
-      "rank_sort": 68,
+      "rank_label": "69",
+      "rank_numeric": 69,
+      "rank_sort": 69,
       "model": "mercury-2",
       "tier": "closed_source",
       "cw_pct": 43.1,
@@ -2954,9 +2992,9 @@
       "llm_error_rate_all_findings": 0.0
     },
     {
-      "rank_label": "69",
-      "rank_numeric": 69,
-      "rank_sort": 69,
+      "rank_label": "70",
+      "rank_numeric": 70,
+      "rank_sort": 70,
       "model": "gpt-5.6-luna",
       "tier": "closed_source",
       "cw_pct": 42.8,
@@ -2992,9 +3030,9 @@
       "llm_error_rate_all_findings": 0.0
     },
     {
-      "rank_label": "70",
-      "rank_numeric": 70,
-      "rank_sort": 70,
+      "rank_label": "71",
+      "rank_numeric": 71,
+      "rank_sort": 71,
       "model": "gpt-4o-mini",
       "tier": "closed_source",
       "cw_pct": 38.9,
@@ -3030,9 +3068,9 @@
       "llm_error_rate_all_findings": 0.0
     },
     {
-      "rank_label": "71",
-      "rank_numeric": 71,
-      "rank_sort": 71,
+      "rank_label": "72",
+      "rank_numeric": 72,
+      "rank_sort": 72,
       "model": "gpt-5-nano",
       "tier": "closed_source",
       "cw_pct": 38.8,
@@ -3068,9 +3106,9 @@
       "llm_error_rate_all_findings": 0.0
     },
     {
-      "rank_label": "72",
-      "rank_numeric": 72,
-      "rank_sort": 72,
+      "rank_label": "73",
+      "rank_numeric": 73,
+      "rank_sort": 73,
       "model": "gemma3-4b",
       "tier": "open_source_consumer",
       "cw_pct": 37.5,
@@ -3106,9 +3144,9 @@
       "llm_error_rate_all_findings": 0.0
     },
     {
-      "rank_label": "73",
-      "rank_numeric": 73,
-      "rank_sort": 73,
+      "rank_label": "74",
+      "rank_numeric": 74,
+      "rank_sort": 74,
       "model": "gemma3-12b",
       "tier": "open_source_consumer",
       "cw_pct": 36.3,
@@ -3144,9 +3182,9 @@
       "llm_error_rate_all_findings": 0.0
     },
     {
-      "rank_label": "74",
-      "rank_numeric": 74,
-      "rank_sort": 74,
+      "rank_label": "75",
+      "rank_numeric": 75,
+      "rank_sort": 75,
       "model": "gemma3n-4b",
       "tier": "open_source_consumer",
       "cw_pct": 35.7,
@@ -3182,9 +3220,9 @@
       "llm_error_rate_all_findings": 0.0
     },
     {
-      "rank_label": "75",
-      "rank_numeric": 75,
-      "rank_sort": 75,
+      "rank_label": "76",
+      "rank_numeric": 76,
+      "rank_sort": 76,
       "model": "mistral-nemo",
       "tier": "open_source_consumer",
       "cw_pct": 35.6,
@@ -3220,9 +3258,9 @@
       "llm_error_rate_all_findings": 0.0
     },
     {
-      "rank_label": "76",
-      "rank_numeric": 76,
-      "rank_sort": 76,
+      "rank_label": "77",
+      "rank_numeric": 77,
+      "rank_sort": 77,
       "model": "gpt-5.4-nano",
       "tier": "closed_source",
       "cw_pct": 33.1,
@@ -3258,9 +3296,9 @@
       "llm_error_rate_all_findings": 0.0
     },
     {
-      "rank_label": "77",
-      "rank_numeric": 77,
-      "rank_sort": 77,
+      "rank_label": "78",
+      "rank_numeric": 78,
+      "rank_sort": 78,
       "model": "llama-3.1-8b",
       "tier": "open_source_consumer",
       "cw_pct": 32.6,
@@ -3296,9 +3334,9 @@
       "llm_error_rate_all_findings": 0.0
     },
     {
-      "rank_label": "78",
-      "rank_numeric": 78,
-      "rank_sort": 78,
+      "rank_label": "79",
+      "rank_numeric": 79,
+      "rank_sort": 79,
       "model": "gemma3-27b",
       "tier": "open_source_consumer",
       "cw_pct": 29.8,
@@ -3336,7 +3374,7 @@
     {
       "rank_label": "baseline",
       "rank_numeric": null,
-      "rank_sort": 1078,
+      "rank_sort": 1079,
       "model": "always-fp",
       "tier": "baseline",
       "cw_pct": 30.1,
@@ -3374,7 +3412,7 @@
     {
       "rank_label": "baseline",
       "rank_numeric": null,
-      "rank_sort": 1079,
+      "rank_sort": 1080,
       "model": "always-inc",
       "tier": "baseline",
       "cw_pct": 22.1,
@@ -3412,7 +3450,7 @@
     {
       "rank_label": "baseline",
       "rank_numeric": null,
-      "rank_sort": 1080,
+      "rank_sort": 1081,
       "model": "always-tp",
       "tier": "baseline",
       "cw_pct": 16.9,
