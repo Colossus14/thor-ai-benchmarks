@@ -1,6 +1,7 @@
 {
   "highlights": {
     "recent_additions": [
+      "glm-5.3",
       "qwen3.8-27b",
       "grok-4.6",
       "gemini-3.5-flash-lite",
@@ -96,7 +97,8 @@
         "gemini-3.6-flash",
         "gemini-3.5-flash-lite",
         "grok-4.6",
-        "qwen3.8-27b"
+        "qwen3.8-27b",
+        "glm-5.3"
       ]
     },
     "open_source_pro": {
