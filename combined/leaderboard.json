@@ -2434,5 +2434,33 @@
     "rank": "baseline",
     "tier": "baseline",
     "incomplete": false
+  },
+  {
+    "model": "gemini-3.8-flash",
+    "cw_pct": "67.4",
+    "ots_pct": "68.5",
+    "ots_macro": "68.5",
+    "balanced_ots": "64.7159",
+    "threat_capture": "84.66",
+    "critical_miss": "0.0",
+    "anomaly_capture": "82.42",
+    "anomaly_suppression": "5.41",
+    "false_review": "37.65",
+    "false_escalation": "0.0",
+    "ord_pct": "84.1",
+    "mae": "15.7",
+    "rmse": "20.5",
+    "exact": "129",
+    "minor": "60",
+    "hard": "0",
+    "hard_miss": "0",
+    "hard_over": "0",
+    "n_errors": "0",
+    "n": "189",
+    "avg_seconds_per_event": "9.18",
+    "total_tokens": "736619",
+    "total_llm_errors": "0",
+    "tier": "closed_source",
+    "incomplete": false
   }
 ]

@@ -1,6 +1,8 @@
 {
   "highlights": {
     "recent_additions": [
+      "gemini-3.8-flash",
+      "muse-spark-1.3",
       "ox-alpha",
       "glm-5.3",
       "qwen3.8-27b",
@@ -100,7 +102,9 @@
         "grok-4.6",
         "qwen3.8-27b",
         "glm-5.3",
-        "ox-alpha"
+        "ox-alpha",
+        "muse-spark-1.3",
+        "gemini-3.8-flash"
       ]
     },
     "open_source_pro": {

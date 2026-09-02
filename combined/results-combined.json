@@ -48381,5 +48381,29 @@
       "R8",
       "R9"
     ]
+  },
+  "gemini-3.8-flash/R1+R10+R2+R3+R4+R5+R6+R7+R8+R9": {
+    "model": "gemini-3.8-flash",
+    "cw_pct": 67.4,
+    "cw_total": 254.6,
+    "cw_max": 378.0,
+    "ots_pct": 68.5,
+    "ots_total": 258.90000000000003,
+    "ots_max": 378.0,
+    "ordinal_pct": 84.1,
+    "ordinal_total": 318,
+    "ordinal_max": 378,
+    "n_matched": 189,
+    "n_expected": 189,
+    "n_errors": 0,
+    "n_exact": 129,
+    "n_minor": 60,
+    "n_hard": 0,
+    "mae": 0,
+    "rmse": 0,
+    "total_tokens": 736619,
+    "elapsed_seconds": 1735.492781364,
+    "llm_errors": 0,
+    "incomplete": false
   }
 }

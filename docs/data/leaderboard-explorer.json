@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-21T07:05:23.916718+00:00",
+  "generated_at": "2026-09-02T20:56:03.073522+00:00",
   "source": {
     "leaderboard": "combined/leaderboard.json",
     "operational_summary_by_tier": "combined/operational-profile-summary-by-tier.csv"
   },
   "summary": {
-    "model_count": 84,
+    "model_count": 85,
     "baseline_count": 3,
-    "benchmarked_model_count": 81,
-    "complete_count": 84,
+    "benchmarked_model_count": 82,
+    "complete_count": 85,
     "incomplete_count": 0
   },
   "metrics": [
@@ -3559,6 +3559,44 @@
       "hard_rate_all_findings": 0.0,
       "hard_miss_share_all_findings": 0.0,
       "hard_over_share_all_findings": 51.58,
+      "llm_error_rate_all_findings": 0.0
+    },
+    {
+      "rank_label": null,
+      "rank_numeric": null,
+      "rank_sort": 1084,
+      "model": "gemini-3.8-flash",
+      "tier": "closed_source",
+      "cw_pct": 67.4,
+      "ots_pct": 68.5,
+      "ots_macro": 68.5,
+      "balanced_ots": 64.7159,
+      "threat_capture": 84.66,
+      "critical_miss": 0.0,
+      "anomaly_capture": 82.42,
+      "anomaly_suppression": 5.41,
+      "false_review": 37.65,
+      "false_escalation": 0.0,
+      "ord_pct": 84.1,
+      "mae": 15.7,
+      "rmse": 20.5,
+      "avg_seconds_per_event": 9.18,
+      "total_tokens": 736619,
+      "estimated_run_cost_cents": null,
+      "exact": 129,
+      "minor": 60,
+      "hard": 0,
+      "hard_miss": 0,
+      "hard_over": 0,
+      "n_errors": 0,
+      "n": 189,
+      "incomplete": false,
+      "is_baseline": false,
+      "exact_rate_all_findings": 68.25,
+      "minor_rate_all_findings": 31.75,
+      "hard_rate_all_findings": 0.0,
+      "hard_miss_share_all_findings": 0.0,
+      "hard_over_share_all_findings": 0.0,
       "llm_error_rate_all_findings": 0.0
     }
   ]
